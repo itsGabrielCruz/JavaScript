@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com DOM</title>
+    <style>
+        div#area {
+            font: normal 70pt Segoe UI;
+            background: rgb(9, 65, 129);
+            color: #ffffff;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 100%;
+            margin-left: 45%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lista completa de eventos -->
+    <!-- https://developer.mozilla.org/pt-BR/docs/Web/Events -->
+    <!--onmouseenter, onmouseout, onmousemove, onmousedown, onmouseup, onclick -->
+
+    <div id="area">
+        :-)
+    </div>
+<script>
+    var area = document.getElementById('area')
+    area.addEventListener('mouseenter', entrou)
+    area.addEventListener('mouseout', saiu)
+    area.addEventListener('click', clicou)
+
+    function entrou() {
+        area.innerText = 'Entrou'
+        area.style.background = 'green'
+    }
+
+    function saiu() {
+        area.innerText = 'Saiu'
+        area.style.background = 'rgb(161, 91, 0)'
+    }
+
+    function clicou() {
+        area.innerText = 'Clicou'
+        area.style.background = 'red'
+    }
+
+</script>
+</body>
+</html>

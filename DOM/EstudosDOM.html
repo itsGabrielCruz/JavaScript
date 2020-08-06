@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos DOM</title>
+    <style>
+        body {
+            background-color: #164bdb;
+            color: white;
+            font-family: Segoe UI;
+        }
+    </style>
+</head>
+<body>
+    <!-- 5 formas de obter informações pelo DOM -->
+    <!-- document.getElementsByTagName // getElementById // getElementByClassName // querySelector() -->
+    
+    <h1>Iniciando os estudos DOM</h1>
+    <p id="primeiro">Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim!</div>
+<script>
+var mudaCor = document.querySelector('h1')
+document.write(mudaCor.innerHTML.toUpperCase())
+</script>
+</body>
+</html>

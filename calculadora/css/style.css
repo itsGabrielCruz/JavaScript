@@ -1,0 +1,39 @@
+body {
+    color: #232323;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 150px;
+    font-family: Arial;
+    background-image: url(https://i.imgur.com/rkQwW8r.jpg)
+
+}
+
+h3 {
+    font: normal 20pt Segoe UI;
+}
+
+.botao {
+    background: #20e026;
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+  
+h1 {
+ margin-bottom: 25px;
+  }
+
+  input[type=number] {
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 100px;
+  }

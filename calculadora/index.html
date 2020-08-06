@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Estudos de JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8"/>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <h3>Digite dois valores para calcular a soma:</h3>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" class="botao" value="Calcular" onclick="calcular()">  
+    <h3 id="res">Qual o resultado?</h3>  
+    
+    <script>
+        function calcular() {
+            var c1 = document.getElementById('txtn1')
+            var c2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(c1.value)
+            var n2 = Number(c2.value)
+            var soma = n1 + n2    
+            res.innerHTML = `O resultado foi <b>${soma}</b>`           
+            
+        }
+       </script>
+</body>
+</html>
+
