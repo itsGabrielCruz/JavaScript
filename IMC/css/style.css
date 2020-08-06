@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(217, 255, 250);
+}
+
+div#header {
+    width: 102%;
+    height: 90px;
+    background-color: rgb(2, 41, 78);
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+h1 {
+    margin-top: -8px;
+    color: #ffffff;
+    line-height: 90px;
+    text-align: center;
+    font-size: 30pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#left-bar {
+    width: 30%;
+    height: 500px;
+    background-color: #cccccc;
+    text-align: center;
+    color: #3b3b3b;
+    margin-left: -8px;
+    float: left;
+}
+
+div#right-bar {
+    width: 30%;
+    height: 500px;
+    background-color: #cccccc;
+    text-align: center;
+    color: #3b3b3b;
+    margin-right: -8px;
+    float: right;
+
+}
+
+h2 {
+    font-family: Segoe UI;
+    font-weight: 500;
+}
+
+div#canvas {
+    width: 40%;
+    height: 500px;
+    background-color: rgb(202, 102, 55);
+    text-align: left;
+    color: #202020;
+    margin-left: 8px;
+    float: left;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+input[type=number] {
+    width: 60%;
+    margin-left: 20px;
+    padding: 12px 12px;
+    border-radius: 100px;
+}
+
+input[type=button] {
+    margin-left: 20px;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.res {
+    font-family: Segoe UI;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+/* Estilo de tabela */
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #02294e;
+    color: white;
+  }
+
+  fieldset {
+      color: #272727;
+      font-weight: 900;
+      border-color: #575757;
+      height: 33%;
+      margin: 10px;
+      font-family: Segoe UI;
+  }
+
+  legend {
+      text-align: right;
+      font-size: 20px;
+      text-transform: uppercase;
+  }
