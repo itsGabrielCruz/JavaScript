@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Condições</title>
+    <style>
+        body {
+            color: #ffffff;
+            background-color: #b9b5b5;
+        }
+        div#bloco {
+            background-color: #725555;
+            width: 500px;
+            height: 300px;
+            margin-top: 90px;
+            margin-left:500px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font: normal 20pt Segoe UI;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloco">
+        <h1>Você está apto a digirir?</h1>
+        Ano de nascimento: <input type="number" name="anoNasc" id="nascimento" placeholder="ex. 1925"/> <br /><br />
+        <input type="button" value="Descobrir" onclick="calcular()" />
+        <fieldset>
+            <legend style="text-align: right;">Resultado</legend>
+            <p>O resultado aparecerá aqui</p>
+        </fieldset>
+    </div>
+<script>
+        var nome = prompt("Digite seu nome e sobrenome: ")
+        if (nome === null) {
+            alert("ATENÇÃO! É importante que você dê seu nome.")
+            var nome = prompt("Digite seu nome e sobrenome")
+        } 
+    function calcular() {
+        var anoNasc = document.getElementById("nascimento")
+        var ano = Number(anoNasc.value)
+        var fim = document.getElementsByTagName("p")[0]
+        var idade = 2020 - ano
+
+        fim.innerHTML = `<b>${nome}</b>, você tem ${idade} anos. `
+
+        if(idade >= 18) {
+            fim.innerHTML += 'Com essa idade você está apto(a) a dirigir. Vá ao polo do DETRAN mais próximo de você.'
+        } else {
+            fim.innerHTML += `Infelizmente você ainda não pode dirigir. Mas você estará apto(a) daqui a ${18 - idade} anos.`
+        }
+}
+</script>
+</body>
+</html>
