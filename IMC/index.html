@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +68,20 @@
             var altura = Number(altura1.value)
             var res = document.querySelector("p#res")
             var resultado = peso / (altura * altura)
-            res.innerHTML = `${nome}, o seu IMC é <b>${resultado.toFixed(1)}</b>.`
+            res.innerHTML = `${nome}, o seu IMC é <b>${resultado.toFixed(1)}</b>. `
+
+            if(resultado < 18.5) {
+              res.innerHTML += `Sua classificação é MAGREZA, com grau de obesidade 0. Por causa disso, é aconselhável procurar o médico mais próximo de você.`
+            } else if(resultado >= 18.5 && resultado <= 24.9) {
+              res.innerHTML += `Sua classificação é NORMAL, com grau de obesidade 0.`
+            } else if(resultado >= 25.0 && resultado <= 29.0) {
+              res.innerHTML += `Sua classificação é SOBREPESO, com grau de obesidade I.`
+            } else if(resultado >= 30.0 && resultado <= 39.9) {
+              res.innerHTML += `Sua classificação é OBESIDADE, com grau de obesidade II.`
+            } else if(resultado >= 40.0) {
+              res.innerHTML += `Sua classificação é OBESIDADE GRAVE, com grau de obesidade III. Por causa disso, é aconselhável procurar o médico mais próximo de você.`
+            }
+
         }
     </script>
     </div>
