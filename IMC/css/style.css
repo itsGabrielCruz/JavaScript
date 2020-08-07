@@ -93,9 +93,9 @@ input[type=button] {
     font-weight: 500;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 5px;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Estilo de tabela */
