@@ -21,7 +21,7 @@ h1 {
 
 div#left-bar {
     width: 30%;
-    height: 500px;
+    height: 700px;
     background-color: #cccccc;
     text-align: center;
     color: #3b3b3b;
@@ -31,7 +31,7 @@ div#left-bar {
 
 div#right-bar {
     width: 30%;
-    height: 500px;
+    height: 700px;
     background-color: #cccccc;
     text-align: center;
     color: #3b3b3b;
@@ -47,7 +47,7 @@ h2 {
 
 div#canvas {
     width: 40%;
-    height: 500px;
+    height: 700px;
     background-color: #6787af;
     text-align: left;
     color: #202020;
