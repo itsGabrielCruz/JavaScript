@@ -53,13 +53,25 @@
     <input type="number" name="peso" id="peso" />
     <p>Sua altura:</p>
     <input type="number" name="altura" id="altura" /> <br/><br />
-    <input type="button" value="Calcular" />
+    <input type="button" value="Calcular" onclick="calcular()"/>
     <fieldset>
         <legend>resultado</legend>
-        <p class="res">Teste</p>
+        <p id="res">O resutado aparecerá aqui...</p>
     </fieldset>
+    <script>
+        var nome = window.prompt("Digite seu nome:")
+        function calcular() {
+            var peso1 = document.getElementById("peso")
+            var peso = Number(peso1.value)
+            var altura1 = document.getElementById("altura")
+            var altura = Number(altura1.value)
+            var res = document.querySelector("p#res")
+            var resultado = peso / (altura * altura)
+            res.innerHTML = `${nome}, o seu IMC é <b>${resultado.toFixed(1)}</b>.`
+        }
+    </script>
     </div>
-
+    
     <div id="right-bar">
     <h2>Como funciona?</h2>
     <p class="desc">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa. O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.

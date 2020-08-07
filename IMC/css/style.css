@@ -88,7 +88,7 @@ input[type=button] {
     text-align: justify;
 }
 
-.res {
+#res {
     font-family: Segoe UI;
     font-weight: 500;
     margin-left: 20px;
