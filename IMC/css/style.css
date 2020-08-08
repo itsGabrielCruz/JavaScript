@@ -37,7 +37,7 @@ div#right-bar {
     color: #3b3b3b;
     margin-right: -8px;
     float: right;
-    background-image: url(https://i.imgur.com/Oy3Haq1.jpg);
+    background-image: url(https://i.imgur.com/Oy3Haq1.jpg)
 
 }
 
@@ -54,7 +54,7 @@ div#canvas {
     color: #202020;
     margin-left: 8px;
     float: left;
-    background-image: url(https://i.imgur.com/17Knxhr.jpg);
+    background-image: url(https://i.imgur.com/17Knxhr.jpg)
 }
 
 p {
