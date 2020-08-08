@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(217, 255, 250);
+    background-color: #e2e2e2;
 }
 
 div#header {
@@ -21,7 +21,7 @@ h1 {
 
 div#left-bar {
     width: 30%;
-    height: 500px;
+    height: 700px;
     background-color: #cccccc;
     text-align: center;
     color: #3b3b3b;
@@ -31,12 +31,13 @@ div#left-bar {
 
 div#right-bar {
     width: 30%;
-    height: 500px;
+    height: 700px;
     background-color: #cccccc;
     text-align: center;
     color: #3b3b3b;
     margin-right: -8px;
     float: right;
+    background-image: url(https://i.imgur.com/Oy3Haq1.jpg);
 
 }
 
@@ -47,12 +48,13 @@ h2 {
 
 div#canvas {
     width: 40%;
-    height: 500px;
-    background-color: rgb(202, 102, 55);
+    height: 700px;
+    background-color: #6787af;
     text-align: left;
     color: #202020;
     margin-left: 8px;
     float: left;
+    background-image: url(https://i.imgur.com/17Knxhr.jpg);
 }
 
 p {

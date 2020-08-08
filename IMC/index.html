@@ -21,24 +21,29 @@
         </tr>
         <tr>
           <td>MENOR QUE 18,5</td>
-          <td>MAGREZA</td>
+          <td>Abaixo do peso</td>
           <td>0</td>
         </tr>
         <tr>
           <td>ENTRE 18,5 E 24,9</td>
-          <td>NORMAL</td>
+          <td>Peso ideal</td>
           <td>0</td>
         </tr>
         <tr>
           <td>ENTRE 25,0 E 29,9</td>
-          <td>SOBREPESO</td>
+          <td>Levemente acima do peso</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>ENTRE 30,0 E 34,9</td>
+          <td>OBESIDADE</td>
           <td>I</td>
         </tr>
         <tr>
-          <td>ENTRE 30,0 E 39,9</td>
+          <td>ENTRE 35,0 e 39,9</td>
           <td>OBESIDADE</td>
           <td>II</td>
-        </tr>
+        </tr>   
         <tr>
           <td>MAIOR QUE 40,0</td>
           <td>OBESIDADE GRAVE</td>
@@ -50,9 +55,9 @@
 
     <div id="canvas">
     <p>Seu peso:</p>  
-    <input type="number" name="peso" id="peso" />
+    <input type="number" name="peso" id="peso" placeholder="ex. 56.4"/>
     <p>Sua altura:</p>
-    <input type="number" name="altura" id="altura" /> <br/><br />
+    <input type="number" name="altura" id="altura" placeholder="ex. 1.70"/> <br/><br />
     <input type="button" value="Calcular" onclick="calcular()"/>
     <fieldset>
         <legend>resultado</legend>
@@ -67,7 +72,22 @@
             var altura = Number(altura1.value)
             var res = document.querySelector("p#res")
             var resultado = peso / (altura * altura)
-            res.innerHTML = `${nome}, o seu IMC é <b>${resultado.toFixed(1)}</b>.`
+            res.innerHTML = `${nome}, o seu IMC é <b>${resultado.toFixed(1)}</b>. `
+
+            if(resultado < 18.5) {
+              res.innerHTML += `Você está abaixo do peso. Cuide da sua saúde.`
+            } else if(resultado >= 18.5 && resultado <= 24.9) {
+              res.innerHTML += `Parabéns, você está com o peso ideal.`
+            } else if(resultado >= 25.0 && resultado <= 29.0) {
+              res.innerHTML += `Você está levemente acima do peso. Cuide bem da sua saúde.`
+            } else if(resultado >= 30.0 && resultado <= 34.9) {
+              res.innerHTML += `Sua classificação é OBESIDADE grau I.`
+            } else if(resultado >= 35.0 && resultado <= 39.9) {
+              res.innerHTML += `Sua classificação é OBESIDADE grau II.`
+            } else if(resultado >= 40.0) {
+              res.innerHTML += `Procure um médico, sua classificação é OBESIDADE grau III.`
+            }
+
         }
     </script>
     </div>
