@@ -76,16 +76,16 @@
 
             if(resultado < 18.5) {
               res.innerHTML += `Você está abaixo do peso. Cuide da sua saúde.`
-            } else if(resultado >= 18.5 && resultado <= 24.9) {
-              res.innerHTML += `Parabéns, você está com o peso ideal.`
+            } else if(resultado >= 18.5 && resultado <= 25.0) {
+              res.innerHTML += `Parabéns, você está com o <span class='saudavel'>PESO IDEAL</span>.`
             } else if(resultado >= 25.0 && resultado <= 29.0) {
               res.innerHTML += `Você está levemente acima do peso. Cuide bem da sua saúde.`
             } else if(resultado >= 30.0 && resultado <= 34.9) {
-              res.innerHTML += `Sua classificação é OBESIDADE grau I.`
+              res.innerHTML += `Sua classificação é <span class='obesidade'>OBESIDADE grau I</span>.`
             } else if(resultado >= 35.0 && resultado <= 39.9) {
-              res.innerHTML += `Sua classificação é OBESIDADE grau II.`
+              res.innerHTML += `Sua classificação é <span class='obesidade'>OBESIDADE grau II</span>.`
             } else if(resultado >= 40.0) {
-              res.innerHTML += `Procure um médico, sua classificação é OBESIDADE grau III.`
+              res.innerHTML += `Procure um médico, sua classificação é <span class='obesidade'>OBESIDADE grau III.</span>`
             }
 
         }
