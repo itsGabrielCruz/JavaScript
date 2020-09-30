@@ -1,2 +1,2 @@
 # JavaScript
-Alguns pequenos projetos que criei durante meus estudos iniciais de JavaScript.
+Pequenos projetos que criei durante meus estudos iniciais de JavaScript.
