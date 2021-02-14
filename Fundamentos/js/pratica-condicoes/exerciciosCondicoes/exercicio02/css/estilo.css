@@ -1,0 +1,49 @@
+body {
+    background: rgb(145, 32, 3);
+    font: normal 15pt Arial;
+    background-image: url('../img/bg.png')
+}
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.856);
+}
+
+footer {
+    color: white;
+    text-align: center;
+
+}
+
+input[type=button] {
+    background: rgb(156, 30, 30);
+    color: white;
+    padding: 15px;
+    border-radius: 100px;
+    font: normal 19px Segoe UI;
+    width: 100%;
+}
+
+input[type=button]:hover {
+    background: rgb(134, 5, 5);
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

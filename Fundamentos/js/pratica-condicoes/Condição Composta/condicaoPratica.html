@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática | Condições Simples</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div id="canvas">
+        <h1>Qual a sua idade?</h1>
+        <input type="number" name="nasc" id="camp1" placeholder="Data de nascimento"/>
+        <input type="number" name="atual" id="camp2" placeholder="Ano atual"/>
+        <input type="button" value="Feito!" onclick="calcular()" />
+    </div>
+
+    <div id="footer">
+        <div id="res">●●●</div>
+    </div>
+    <script>
+        var nome = prompt("Digite seu nome:")
+        function calcular() {
+            var camp1 = document.getElementById("camp1")
+            var camp2 = document.getElementById("camp2")
+            var nasc = Number(camp1.value)
+            var ano = Number(camp2.value)
+            var resFinal = ano - nasc
+            var res = document.getElementById("res")
+            res.innerHTML = `${nome}, a sua idade atual é <b>${resFinal} anos</b>. `
+
+            if(resFinal >= 18) {
+                res.innerHTML += `Você é maior de idade.`
+            } else {
+                res.innerHTML += 'Você é de menor.'
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
