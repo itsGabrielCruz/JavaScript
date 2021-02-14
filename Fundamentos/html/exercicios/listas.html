@@ -1,0 +1,63 @@
+<h1>Tipos e listas</h1>
+
+<!-- Lista Ordenada -->
+<ol>
+    <li>Bia</li>
+    <li>Pedro</li>
+    <li>João</li>
+    <li>Ruan</li>
+    <li>Marcos</li>
+</ol>
+
+<!-- Listas Não Ordenadas -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+
+<!-- Listas Aninhadas -->
+<h1>Lista Aninhada</h1>
+<ul class="tree">
+    <li><span wm-folder>backend</span>
+        <ul>
+            <li><span wm-folder>app</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li><span wm-folder>config</span>
+                    <ul>
+                        <li>banco.js</li>
+                        <li>rotas.js</li>
+                        <li>servidor.js</li>
+                    </ul>
+            </li>
+        </ul>
+    </li>
+    <li><span wm-folder>frontend</span>
+        <ul>
+            <li><span wm-folder>public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d == 'none' ? 'block' : 'none'
+        }
+    })
+</script>
